@@ -1,0 +1,17 @@
+def lcm(A,B):
+    if A>B:
+        greater=A
+    else:
+        greater=B
+    while(True):
+        if((greater % A==0)and (greater % B ==0)):
+            lcm = greater
+            break
+        greater +=1
+    return lcm
+T=int(input("Number_of_cases(1<=T<=1000):"))
+for i in range(T):
+    A,B=str(input("A,B: ")).split()
+    A=int(A)
+    B=int(B)
+    print(lcm(A,B))
