@@ -1,0 +1,4 @@
+N,M=str(input("1<=N,M<=300 : ")).split()
+N=int(N)
+M=int(M)
+print((N-1)+N*(M-1))
